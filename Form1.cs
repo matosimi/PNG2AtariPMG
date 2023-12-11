@@ -171,7 +171,11 @@ namespace Png2gr5
                         pixelBits = Convert.ToByte(colorBits.Substring(0, 1), 2);
                         data2 += pixelBits;
                     }
-
+                    if (checkBoxLeftAlign.Checked)
+                    {
+                        data = (byte)(data << (8 - exportWidth));
+                        data2 = (byte)(data2 << (8 - exportWidth));
+                    }
                     dataArray[y + frame * bm.Height] = data;
                     dataArray[y + (frameCount + frame) * bm.Height] = data2;
                 }

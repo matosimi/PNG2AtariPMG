@@ -324,7 +324,8 @@
             ClientSize = new Size(882, 609);
             Controls.Add(splitContainer1);
             Name = "Form1";
-            Text = "PNG to Atari PMG by MatoSimi 23.6.2023";
+            //Text = "PNG to Atari PMG by MatoSimi 23.6.2023";
+            Text = "PNG to Atari PMG v0.2 by MatoSimi 11.12.2023";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDownSliceWidth).EndInit();
